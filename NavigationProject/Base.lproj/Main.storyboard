@@ -278,11 +278,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="UeV-7b-B2N">
-                                    <rect key="frame" x="0.0" y="267" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orangeCell" rowHeight="60" id="oI3-ZD-Xz9">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -302,7 +297,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.77522283792495728" green="0.0" blue="0.06154806383904024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="WND-Ix-FsY" customClass="CustomTableTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="119" id="WND-Ix-FsY" customClass="CustomTableTableViewCell">
                                         <rect key="frame" x="0.0" y="148" width="375" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WND-Ix-FsY" id="3f5-eO-Kkg">

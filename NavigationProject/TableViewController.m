@@ -17,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.array = @[@"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta"];
+      NSDictionary *dic = @{
+                          @"name":@"Felipe Barbosa",
+                          @"email":@"analista.barbosa@gmail.com",
+                          @"street":@"Rua Alfredo Freire",
+                          @"country":@"Brasil"};
+    NSDictionary *dic2 = @{
+                          @"name":@"David Barbosa",
+                          @"email":@"teste@gmail.com",
+                          @"street":@"Rua Maranguape",
+                          @"country":@"Canadá"};
+    
+  self.array = @{dic, dic2};
+    
     // Do any additional setup after loading the view.
 }
 
@@ -33,10 +45,11 @@
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     CustomTableTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier: @"customCell" forIndexPath:indexPath];
-    cell.countryLabel.text = @"Brasil";
-    cell.countryLabel.text = @"Estados Unidos";
-    cell.countryLabel.text = @"Canadá";
-    cell.textLabel.text = self.array[indexPath.row];
+    NSDictionary *dic = self.array[indexPath.row];
+    cell.nameLabel.text = dic[@"name"];
+    cell.streetLabel.text = dic[@"street"];
+    cell.countryLabel.text = dic[@"country"];
+    cell.emailLabel.text=dic[@"email"];
     return cell;
 }
 
