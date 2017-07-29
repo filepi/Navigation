@@ -13,6 +13,7 @@
 		816EC55D1F2CD09E00BC9C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816EC55B1F2CD09E00BC9C99 /* Main.storyboard */; };
 		816EC55F1F2CD09E00BC9C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816EC55E1F2CD09E00BC9C99 /* Assets.xcassets */; };
 		816EC5621F2CD09E00BC9C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816EC5601F2CD09E00BC9C99 /* LaunchScreen.storyboard */; };
+		816EC56B1F2CD6B100BC9C99 /* ViewControllerLastPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 816EC56A1F2CD6B100BC9C99 /* ViewControllerLastPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		816EC55E1F2CD09E00BC9C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		816EC5611F2CD09E00BC9C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		816EC5631F2CD09E00BC9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816EC5691F2CD6B100BC9C99 /* ViewControllerLastPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLastPage.h; sourceTree = "<group>"; };
+		816EC56A1F2CD6B100BC9C99 /* ViewControllerLastPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLastPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				816EC5601F2CD09E00BC9C99 /* LaunchScreen.storyboard */,
 				816EC5631F2CD09E00BC9C99 /* Info.plist */,
 				816EC5521F2CD09E00BC9C99 /* Supporting Files */,
+				816EC5691F2CD6B100BC9C99 /* ViewControllerLastPage.h */,
+				816EC56A1F2CD6B100BC9C99 /* ViewControllerLastPage.m */,
 			);
 			path = NavigationProject;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				816EC55A1F2CD09E00BC9C99 /* ViewController.m in Sources */,
 				816EC5571F2CD09E00BC9C99 /* AppDelegate.m in Sources */,
 				816EC5541F2CD09E00BC9C99 /* main.m in Sources */,
+				816EC56B1F2CD6B100BC9C99 /* ViewControllerLastPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
