@@ -28,7 +28,7 @@
                           @"street":@"Rua Maranguape",
                           @"country":@"Canadá"};
     
-  self.array = @{dic, dic2};
+  self.array = @[dic, dic2];
     
     // Do any additional setup after loading the view.
 }
