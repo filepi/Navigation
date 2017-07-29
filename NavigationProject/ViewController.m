@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "BlueViewController.h"
+#import "YellowViewController.h"
+#import "RedViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +26,33 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"segueAzul"])
+    {
+        BlueViewController *blueViewController = [segue destinationViewController];
+        blueViewController.nome = @"Aew porra";
+        
+    } else if ([segue.identifier isEqualToString:@"segueAmarelo"])
+    {
+    }
+    else
+    {
+        RedViewController * redPage = [segue destinationViewController];
+        redPage.string = @"Lorem Ipsum Dolor";
+    }
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender  {
+    //não navega pra tela azul
+    if ([identifier isEqualToString:@"segueAzul"])
+    {
+        return false;
+    }
+    else{
+        return true;
+    }
 }
 
 
